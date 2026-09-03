@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hannah — About Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --navy: #0a0f1c;
+      --red: #e4002b;
+      --white: #ffffff;
+      --gray: #d9d9d9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    /* HERO */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80')
+        center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 3rem;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 15, 28, 0.55);
+    }
+
+    .hero-text {
+      position: relative;
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--gray);
+    }
+
+    /* SECTION */
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      color: var(--red);
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      color: var(--gray);
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+      padding-left: 1rem;
+      position: relative;
+      color: var(--white);
+    }
+
+    li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: var(--red);
+    }
+
+    /* TAGS */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .tag {
+      background: var(--red);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--gray);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Hannah</h1>
+      <p>College student. Writer. Event‑industry learner. Always moving forward.</p>
+    </div>
+  </div>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I'm a college student in the Grand Rapids area, exploring career paths and
+      figuring out what kind of work actually feels meaningful. I’m drawn to
+      roles that mix planning, people, and clear communication — anything that
+      lets me think critically while staying grounded in real‑world work.
+    </p>
+
+    <h2>What Drives Me</h2>
+    <ul>
+      <li>Wedding & event work — I love seeing all the moving parts sync up.</li>
+      <li>Literary analysis — close reading is basically my sport.</li>
+      <li>Ethical reasoning — especially in business and everyday decisions.</li>
+    </ul>
+
+    <div class="tags">
+      <span class="tag">Curious</span>
+      <span class="tag">Organized</span>
+      <span class="tag">Detail‑Oriented</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Right Now</h2>
+    <p>
+      I'm gaining hands‑on experience in the wedding industry while sharpening my
+      academic writing and analysis skills. I like being both behind the scenes
+      and thoughtfully involved in the bigger picture.
+    </p>
+
+    <h2>Fun Facts</h2>
+    <ul>
+      <li>I love simple weekly meal routines.</li>
+      <li>No fish or tuna.</li>
+      <li>Cottage cheese is a no.</li>
+    </ul>
+  </section>
+
+  <footer>
+    Built with energy, curiosity, and a Red Bull‑inspired vibe.
+  </footer>
+</body>
+</html>
