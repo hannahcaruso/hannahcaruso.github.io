@@ -165,7 +165,14 @@ a {
 
 .hero p {
   font-size: clamp(1.05rem, 2.5vw, 1.25rem);
-  opacity: 0.92;
+  /* override the global muted gray, which disappears on photos */
+  color: #fffaf1;
+  opacity: 0.95;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45);
+}
+
+.hero h1 {
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
 }
 
 .hero .photo-credit {
@@ -678,6 +685,20 @@ footer a {
   .gallery .cap {
     font-size: 0.78rem;
     padding: 1.5rem 0.6rem 0.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav-name {
+    font-size: 0.98rem;
+  }
+
+  .nav-links {
+    gap: 0.7rem;
+  }
+
+  .nav-links a {
+    font-size: 0.88rem;
   }
 }
 
