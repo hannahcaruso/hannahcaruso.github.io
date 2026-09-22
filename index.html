@@ -2,188 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Hannah — About Me</title>
+  <title>Hannah Caruso</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    :root {
-      --navy: #0a0f1c;
-      --red: #e4002b;
-      --white: #ffffff;
-      --gray: #d9d9d9;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background: var(--navy);
-      color: var(--white);
-      line-height: 1.6;
-    }
-
-    /* HERO */
-    .hero {
-      background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80')
-        center/cover no-repeat;
-      height: 70vh;
-      display: flex;
-      align-items: flex-end;
-      padding: 3rem;
-      position: relative;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(10, 15, 28, 0.55);
-    }
-
-    .hero-text {
-      position: relative;
-      max-width: 700px;
-    }
-
-    .hero h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-      text-transform: uppercase;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--gray);
-    }
-
-    /* SECTION */
-    section {
-      padding: 3rem 1.5rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      text-transform: uppercase;
-      color: var(--red);
-    }
-
-    p {
-      margin-bottom: 1.5rem;
-      color: var(--gray);
-    }
-
-    ul {
-      list-style: none;
-      margin-top: 1rem;
-    }
-
-    li {
-      margin-bottom: 0.6rem;
-      padding-left: 1rem;
-      position: relative;
-      color: var(--white);
-    }
-
-    li::before {
-      content: "▸";
-      position: absolute;
-      left: 0;
-      color: var(--red);
-    }
-
-    /* TAGS */
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-
-    .tag {
-      background: var(--red);
-      padding: 0.3rem 0.8rem;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: var(--gray);
-      font-size: 0.85rem;
-    }
-  </style>
+  <meta name="description" content="Hannah Caruso: college student, writer, event-industry learner, and happiest outdoors." />
+  <script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
-  <div class="hero">
+  <nav class="nav">
+    <a class="nav-name" href="/">Hannah Caruso</a>
+    <div class="nav-links">
+      <a href="/" aria-current="page">Home</a>
+      <a href="/nature.html">Nature &amp; Joy</a>
+      <button class="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </nav>
+
+  <header class="hero" style="background-image: url('photos/img_0415.jpg');">
     <div class="hero-text">
-      <h1>Hannah</h1>
-      <p>College student. Writer. Event‑industry learner. Always moving forward.</p>
+      <h1>Hi, I'm Hannah.</h1>
+      <p>College student, writer, and event‑industry learner. Happiest on a trail with a view at the end of it.</p>
     </div>
-  </div>
+    <span class="photo-credit">Photo: mine, from a cliff walk above the sea</span>
+  </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm a college student in the Grand Rapids area, exploring career paths and
-      figuring out what kind of work actually feels meaningful. I’m drawn to
-      roles that mix planning, people, and clear communication — anything that
-      lets me think critically while staying grounded in real‑world work.
-    </p>
+  <main>
+    <section class="wrap intro">
+      <figure>
+        <img src="photos/img_5174.jpg" alt="Hannah grinning in an ATV helmet on a snowy, rocky mountain plateau" />
+        <figcaption>ATV‑ing through snow and clouds in Iceland. This face is how I feel about adventures.</figcaption>
+      </figure>
+      <div>
+        <span class="eyebrow">About me</span>
+        <h2>Curious, organized, and always outside when I can be.</h2>
+        <p class="lead">
+          I'm a college student in the Grand Rapids area, exploring career paths and
+          figuring out what kind of work actually feels meaningful. I'm drawn to
+          roles that mix planning, people, and clear communication: anything that
+          lets me think critically while staying grounded in real‑world work.
+        </p>
+        <div class="tags">
+          <span class="tag">Curious</span>
+          <span class="tag">Organized</span>
+          <span class="tag">Detail‑oriented</span>
+          <span class="tag">Outdoorsy</span>
+        </div>
+      </div>
+    </section>
 
-    <h2>What Drives Me</h2>
-    <ul>
-      <li>Wedding & event work — I love seeing all the moving parts sync up.</li>
-      <li>Literary analysis — close reading is basically my sport.</li>
-      <li>Ethical reasoning — especially in business and everyday decisions.</li>
-    </ul>
+    <section class="wrap" style="padding-top: 0;">
+      <div class="tabs">
+        <div class="tab-list" role="tablist" aria-label="More about Hannah">
+          <button role="tab" id="tab-drives" aria-controls="panel-drives" aria-selected="true">What drives me</button>
+          <button role="tab" id="tab-now" aria-controls="panel-now" aria-selected="false" tabindex="-1">Right now</button>
+          <button role="tab" id="tab-facts" aria-controls="panel-facts" aria-selected="false" tabindex="-1">Fun facts</button>
+        </div>
 
-    <div class="tags">
-      <span class="tag">Curious</span>
-      <span class="tag">Organized</span>
-      <span class="tag">Detail‑Oriented</span>
-    </div>
-  </section>
+        <div class="tab-panel" id="panel-drives" role="tabpanel" aria-labelledby="tab-drives">
+          <ul class="list">
+            <li><strong>Wedding &amp; event work.</strong> I love seeing all the moving parts sync up.</li>
+            <li><strong>Literary analysis.</strong> Close reading is basically my sport.</li>
+            <li><strong>Ethical reasoning.</strong> Especially in business and everyday decisions.</li>
+          </ul>
+        </div>
 
-  <section>
-    <h2>Right Now</h2>
-    <p>
-      I'm gaining hands‑on experience in the wedding industry while sharpening my
-      academic writing and analysis skills. I like being both behind the scenes
-      and thoughtfully involved in the bigger picture.
-    </p>
+        <div class="tab-panel" id="panel-now" role="tabpanel" aria-labelledby="tab-now" hidden>
+          <p>
+            I'm gaining hands‑on experience in the wedding industry while sharpening my
+            academic writing and analysis skills. I like being both behind the scenes
+            and thoughtfully involved in the bigger picture.
+          </p>
+        </div>
 
-    <h2>Fun Facts</h2>
-    <ul>
-      <li>I love simple weekly meal routines.</li>
-      <li>No fish or tuna.</li>
-      <li>Cottage cheese is always a yes if it's large curd. </li>
-    </ul>
-  </section>
+        <div class="tab-panel" id="panel-facts" role="tabpanel" aria-labelledby="tab-facts" hidden>
+          <ul class="list">
+            <li>I love simple weekly meal routines.</li>
+            <li>No fish or tuna.</li>
+            <li>Cottage cheese is always a yes if it's large curd.</li>
+            <li>I swim for fun, never for laps.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>Nature &amp; Joy</h2>
-    <p>
-      Being outside is how I reset. I wrote a page about my love for nature
-      and the psychology behind why certain things bring us joy.
-    </p>
-    <a class="tag" href="/nature.html" style="color: var(--white); text-decoration: none;">Read more →</a>
-  </section>
+    <section class="wrap" style="padding-top: 0;">
+      <a class="feature" href="/nature.html">
+        <img src="photos/img_3946.jpg" alt="Sandstone arch over turquoise Lake Superior water, framed by green leaves" />
+        <div class="feature-body">
+          <span class="eyebrow">Nature &amp; Joy</span>
+          <h2>Why the outdoors resets me</h2>
+          <p>
+            My favorite places I've hiked and swum, the psychology behind why certain
+            things bring us joy, and a quick quiz to find out what brings <em>you</em> joy.
+          </p>
+          <span class="button">Explore the page →</span>
+        </div>
+      </a>
+    </section>
+  </main>
 
   <footer>
-    Built with energy, curiosity, and a Red Bull‑inspired vibe.
+    All photos are my own. · <a href="/nature.html">Nature &amp; Joy</a>
   </footer>
+
+  <script src="/site.js"></script>
 </body>
 </html>

@@ -2,332 +2,229 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Hannah — Nature &amp; Joy</title>
+  <title>Nature &amp; Joy · Hannah Caruso</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    :root {
-      --navy: #0a0f1c;
-      --red: #e4002b;
-      --white: #ffffff;
-      --gray: #d9d9d9;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background: var(--navy);
-      color: var(--white);
-      line-height: 1.6;
-    }
-
-    /* NAV */
-    .back {
-      position: absolute;
-      top: 1.5rem;
-      left: 1.5rem;
-      z-index: 1;
-      color: var(--white);
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .back:hover {
-      color: var(--red);
-    }
-
-    /* HERO */
-    .hero {
-      background: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80')
-        center/cover no-repeat;
-      height: 70vh;
-      display: flex;
-      align-items: flex-end;
-      padding: 3rem;
-      position: relative;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(10, 15, 28, 0.55);
-    }
-
-    .hero-text {
-      position: relative;
-      max-width: 700px;
-    }
-
-    .hero h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-      text-transform: uppercase;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--gray);
-    }
-
-    /* SECTION */
-    section {
-      padding: 3rem 1.5rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      text-transform: uppercase;
-      color: var(--red);
-    }
-
-    h3 {
-      font-size: 1.15rem;
-      font-weight: 700;
-      margin-bottom: 0.4rem;
-      text-transform: uppercase;
-    }
-
-    p {
-      margin-bottom: 1.5rem;
-      color: var(--gray);
-    }
-
-    ul {
-      list-style: none;
-      margin-top: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    li {
-      margin-bottom: 0.6rem;
-      padding-left: 1rem;
-      position: relative;
-      color: var(--white);
-    }
-
-    li::before {
-      content: "▸";
-      position: absolute;
-      left: 0;
-      color: var(--red);
-    }
-
-    /* IDEA CARDS */
-    .ideas {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.25rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .idea {
-      border-left: 3px solid var(--red);
-      padding: 0.25rem 0 0.25rem 1rem;
-    }
-
-    .idea p {
-      margin-bottom: 0;
-    }
-
-    /* TAGS */
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-
-    .tag {
-      background: var(--red);
-      padding: 0.3rem 0.8rem;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: var(--gray);
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      color: var(--white);
-    }
-
-    @media (max-width: 600px) {
-      .hero {
-        padding: 2rem 1rem;
-      }
-
-      .hero h1 {
-        font-size: 2.4rem;
-      }
-
-      section {
-        padding: 2.5rem 1rem;
-      }
-    }
-  </style>
+  <meta name="description" content="Why the outdoors resets me, and the psychology of the things that bring us joy." />
+  <script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
-  <div class="hero">
-    <a class="back" href="/">← Home</a>
+  <nav class="nav">
+    <a class="nav-name" href="/">Hannah Caruso</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/nature.html" aria-current="page">Nature &amp; Joy</a>
+      <button class="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </nav>
+
+  <header class="hero" style="background-image: url('photos/img_6485.jpg');">
     <div class="hero-text">
       <h1>Nature &amp; Joy</h1>
-      <p>Why the outdoors resets me — and what psychology says about the little things that make us happy.</p>
+      <p>Why the outdoors resets me, and what psychology says about the little things that make us happy.</p>
     </div>
-  </div>
+    <span class="photo-credit">Photo: mine, Iceland</span>
+  </header>
 
-  <section>
-    <h2>Why I Love Nature</h2>
-    <p>
-      Being outside is where I slow down, and two things get me there best:
-      swimming and hiking.
-    </p>
+  <main>
+    <section class="wrap">
+      <span class="eyebrow">Why I love it</span>
+      <h2>Two things get me there: swimming and hiking.</h2>
+      <p class="lead">
+        Being outside is where I slow down. It's fresh air and a clear head after a long
+        day of reading and writing, and time that isn't scheduled, measured, or on a screen.
+      </p>
 
-    <div class="ideas">
-      <div class="idea">
-        <h3>Swimming, Just Because</h3>
-        <p>
-          I don't swim for laps or a workout. I swim because it feels good:
-          floating, drifting, being in the water with nowhere to be. It's
-          one of the few times my mind goes quiet.
-        </p>
+      <div class="ideas" style="margin-top: 1.5rem;">
+        <div class="idea">
+          <h3>Swimming, just because</h3>
+          <p>
+            I don't swim for laps or a workout. I swim because it feels good: floating,
+            drifting, being in the water with nowhere to be. It's one of the few times
+            my mind goes quiet.
+          </p>
+        </div>
+        <div class="idea">
+          <h3>Hiking for the view</h3>
+          <p>
+            I hike for the payoff: the overlook, the waterfall, the moment the trees open
+            up and you can see for miles. Some of the most beautiful places are only
+            reachable on foot, and that makes them feel earned.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" style="padding-top: 0;" id="gallery">
+      <span class="eyebrow">Places I've wandered</span>
+      <h2>The views that made the hike worth it</h2>
+      <p>Filter by what you're in the mood for, and tap any photo for the story behind it.</p>
+
+      <div class="filters" role="group" aria-label="Filter photos">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="views" aria-pressed="false">Big views</button>
+        <button type="button" data-filter="water" aria-pressed="false">Water</button>
+        <button type="button" data-filter="joys" aria-pressed="false">Little joys</button>
       </div>
 
-      <div class="idea">
-        <h3>Hiking for the View</h3>
-        <p>
-          I hike for the payoff: the overlook, the waterfall, the moment
-          the trees open up and you can see for miles. Some of the most
-          beautiful places are only reachable on foot, and that makes
-          them feel earned.
-        </p>
+      <div class="gallery">
+        <button type="button" data-tags="water views" data-story="Pictured Rocks on Lake Superior. The water really is that color, and it's the kind of place that makes me want to jump in.">
+          <img src="photos/img_3876.jpg" alt="Striped sandstone cliffs above turquoise lake water" loading="lazy" />
+          <span class="cap">Pictured Rocks</span>
+        </button>
+        <button type="button" data-tags="water views" data-story="Niagara Falls. Standing in the mist, you can feel how loud and huge it is. This is my picture of awe.">
+          <img src="photos/img_3344.jpg" alt="Horseshoe-shaped waterfall throwing up mist under a big sky" loading="lazy" />
+          <span class="cap">Niagara Falls</span>
+        </button>
+        <button type="button" data-tags="views" data-story="Moss-covered lava fields rolling down to a lake in Iceland. It felt like walking on another planet.">
+          <img src="photos/img_5070.jpg" alt="Deep cracks in mossy lava rock with a lake and clouds beyond" loading="lazy" />
+          <span class="cap">Lava fields, Iceland</span>
+        </button>
+        <button type="button" data-tags="joys" data-story="A monarch that decided to hang out on my hand for a while. Tiny moment, huge smile.">
+          <img src="photos/img_4016.jpg" alt="Monarch butterfly with open wings resting on a hand above green grass" loading="lazy" />
+          <span class="cap">A monarch friend</span>
+        </button>
+        <button type="button" data-tags="water views" data-story="A trail on the sea cliffs. The path runs right along the edge, and every turn opens up more ocean.">
+          <img src="photos/img_2960.jpg" alt="Dark green sea cliffs dropping into teal water under puffy clouds" loading="lazy" />
+          <span class="cap">Sea‑cliff trail</span>
+        </button>
+        <button type="button" data-tags="water" data-story="A turquoise lake tucked between mountains. Calm water like this is exactly what I picture when I think of a lazy swim.">
+          <img src="photos/img_5567.jpg" alt="Calm turquoise lake between forested mountains with snowy peaks behind" loading="lazy" />
+          <span class="cap">Alpine lake</span>
+        </button>
+        <button type="button" data-tags="joys" data-story="ATV-ing across snowy plateaus in Iceland. Freezing, muddy, and one of my favorite days ever.">
+          <img src="photos/img_5174.jpg" alt="Hannah smiling in a helmet on an ATV with snowy highlands behind" loading="lazy" />
+          <span class="cap">ATV day</span>
+        </button>
+        <button type="button" data-tags="water views" data-story="A waterfall spilling down a hillside of purple lupines. We followed the stream just to see where it started.">
+          <img src="photos/img_5195.jpg" alt="Rocky stream running through green hills and lupines toward a waterfall" loading="lazy" />
+          <span class="cap">Waterfall &amp; lupines</span>
+        </button>
+        <button type="button" data-tags="water views" data-story="A natural stone arch over Lake Superior's clear water. Worth every step of the hike to get there.">
+          <img src="photos/img_3946.jpg" alt="Sandstone arch topped with trees standing in clear turquoise water" loading="lazy" />
+          <span class="cap">The arch</span>
+        </button>
+        <button type="button" data-tags="views" data-story="A little white church and farmhouses in an Icelandic valley, framed through the birch leaves.">
+          <img src="photos/img_6484.jpg" alt="White church and gabled houses beside a river, mountains behind, seen through leaves" loading="lazy" />
+          <span class="cap">Valley church</span>
+        </button>
+        <button type="button" data-tags="joys" data-story="Sunset at home. You don't have to travel for this one. Some nights the sky just puts on a show.">
+          <img src="photos/sunset.jpg" alt="Streaks of orange and pink sunset clouds over a row of trees" loading="lazy" />
+          <span class="cap">Sunset at home</span>
+        </button>
+        <button type="button" data-tags="water views" data-story="A cliff walk above the sea, with an island out in the bay. Fresh wind and nowhere I needed to be.">
+          <img src="photos/img_0415.jpg" alt="Grassy cliff path above a blue bay with a small island and a harbor" loading="lazy" />
+          <span class="cap">Cliff walk</span>
+        </button>
+        <button type="button" data-tags="views" data-story="Sun pouring into a green valley that opens up to the sea. The payoff at the top of the climb.">
+          <img src="photos/img_9712.jpg" alt="Sunlit green valley opening onto a distant bay" loading="lazy" />
+          <span class="cap">Valley to the sea</span>
+        </button>
+        <button type="button" data-tags="views" data-story="Looking straight up at a forested rock wall. Sometimes the view is up, not out.">
+          <img src="photos/img_5412.jpg" alt="Tall gray rock face covered in trees against a clear sky" loading="lazy" />
+          <span class="cap">Looking up</span>
+        </button>
       </div>
-    </div>
+      <p class="gallery-count" aria-live="polite"></p>
+    </section>
 
-    <ul>
-      <li>Fresh air and a clear head after a long day of reading and writing.</li>
-      <li>Time that isn't scheduled, measured, or on a screen.</li>
-    </ul>
-  </section>
+    <section class="wrap" style="padding-top: 0;">
+      <span class="eyebrow">The psychology of joy</span>
+      <h2>Why certain things reliably make us happy</h2>
+      <p class="lead">
+        I've always been curious about <em>why</em> certain things bring us joy. It turns
+        out researchers have spent a lot of time on that question, and a few ideas really
+        stuck with me.
+      </p>
 
-  <section>
-    <h2>The Psychology of Joy</h2>
-    <p>
-      I've always been curious about <em>why</em> certain things reliably make
-      us happy. It turns out researchers have spent a lot of time on that
-      question, and a few ideas really stuck with me.
-    </p>
-
-    <div class="ideas">
-      <div class="idea">
-        <h3>Biophilia</h3>
-        <p>
-          Biologist E.&nbsp;O. Wilson proposed that humans have an innate pull
-          toward living things and natural environments — a leftover from the
-          long stretch of history when our survival depended on reading the
-          landscape around us.
-        </p>
+      <div class="ideas" style="margin-top: 1.5rem;">
+        <div class="idea">
+          <span class="who">E. O. Wilson</span>
+          <h3>Biophilia</h3>
+          <p>Humans may have an innate pull toward living things and natural places, a leftover from when survival depended on reading the landscape.</p>
+        </div>
+        <div class="idea">
+          <span class="who">Rachel &amp; Stephen Kaplan</span>
+          <h3>Attention restoration</h3>
+          <p>Focused work drains our "directed attention." Nature holds attention gently (<em>soft fascination</em>), which lets that mental muscle recover.</p>
+        </div>
+        <div class="idea">
+          <span class="who">Roger Ulrich</span>
+          <h3>Stress recovery</h3>
+          <p>His research, including a famous study of hospital patients with a window view of trees, suggests natural scenes lower stress and speed recovery.</p>
+        </div>
+        <div class="idea">
+          <span class="who">Dacher Keltner</span>
+          <h3>Awe</h3>
+          <p>Being near something vast shrinks our sense of self in a good way, so worries feel smaller and connection feels bigger. It's exactly what I feel at the top of a good hike.</p>
+        </div>
+        <div class="idea">
+          <span class="who">Blue‑space research</span>
+          <h3>Blue spaces</h3>
+          <p>Time near or in water (lakes, rivers, the ocean) is linked to lower stress and a calmer mood, which may be why an easy swim feels so restorative.</p>
+        </div>
+        <div class="idea">
+          <span class="who">Happiness research</span>
+          <h3>Savoring &amp; small joys</h3>
+          <p>We adapt fast to big changes, but small, repeated pleasures keep landing, especially when we pause to really take them in.</p>
+        </div>
       </div>
+    </section>
 
-      <div class="idea">
-        <h3>Attention Restoration</h3>
-        <p>
-          Psychologists Rachel and Stephen Kaplan argued that focused work
-          drains our "directed attention." Nature holds our attention gently —
-          what they called <em>soft fascination</em> — which lets that mental
-          muscle recover.
-        </p>
+    <section class="wrap" style="padding-top: 0;" id="quiz">
+      <div class="quiz">
+        <span class="eyebrow">Your turn</span>
+        <h2>What brings you joy?</h2>
+        <p>Pick everything that sounds like you, and I'll match you with the idea above that explains it best.</p>
+
+        <form>
+          <div class="choices">
+            <label class="choice"><input type="checkbox" data-ideas="blue restore" /> Being in or near water</label>
+            <label class="choice"><input type="checkbox" data-ideas="awe" /> Reaching a big view</label>
+            <label class="choice"><input type="checkbox" data-ideas="restore bio" /> A quiet walk in the woods</label>
+            <label class="choice"><input type="checkbox" data-ideas="savor small" /> Noticing tiny details</label>
+            <label class="choice"><input type="checkbox" data-ideas="awe bio" /> Exploring somewhere new</label>
+            <label class="choice"><input type="checkbox" data-ideas="small savor" /> A good sunset or sunrise</label>
+            <label class="choice"><input type="checkbox" data-ideas="bio" /> Plants, animals, gardens</label>
+            <label class="choice"><input type="checkbox" data-ideas="blue small" /> A lazy day at the lake</label>
+          </div>
+          <button class="button" type="submit">Show my match</button>
+          <button class="button" type="reset" style="background: transparent; color: var(--muted); border: 1px solid var(--line);">Start over</button>
+          <p class="quiz-hint" aria-live="polite"></p>
+        </form>
+
+        <div class="result" hidden aria-live="polite">
+          <img src="" alt="" />
+          <div>
+            <span class="eyebrow">Your match</span>
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
       </div>
-
-      <div class="idea">
-        <h3>Stress Recovery</h3>
-        <p>
-          Roger Ulrich's research, including a well‑known study of hospital
-          patients with a window view of trees, suggests natural scenes can
-          lower stress and help people recover faster.
-        </p>
-      </div>
-
-      <div class="idea">
-        <h3>Awe</h3>
-        <p>
-          Psychologist Dacher Keltner studies awe — the feeling of being in the
-          presence of something vast. Awe tends to shrink our sense of self in
-          a good way, making worries feel smaller and connection feel bigger.
-          It's exactly what I feel at the top of a good hike.
-        </p>
-      </div>
-
-      <div class="idea">
-        <h3>Blue Spaces</h3>
-        <p>
-          Researchers also study "blue spaces" (lakes, rivers, the ocean).
-          Time near or in water is linked to lower stress and a calmer mood,
-          which may be why an easy swim can feel so restorative.
-        </p>
-      </div>
-
-      <div class="idea">
-        <h3>Savoring</h3>
-        <p>
-          Happiness research finds that simply paying attention to a good
-          moment — lingering on it instead of rushing past — makes the good
-          feeling stronger and longer‑lasting.
-        </p>
-      </div>
-
-      <div class="idea">
-        <h3>Small, Frequent Joys</h3>
-        <p>
-          We adapt quickly to big changes (the "hedonic treadmill"), but small,
-          repeated pleasures keep landing. That's why a daily walk can matter
-          more than a once‑a‑year trip.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>What I Take From It</h2>
-    <p>
-      For me, the takeaway is that joy isn't random. The things that bring us
-      happiness often do so for real reasons — they restore our focus, lower
-      our stress, or connect us to something bigger than ourselves. Knowing
-      that makes me more intentional about building those moments into
-      ordinary weeks, not just saving them for vacations.
-    </p>
-
-    <div class="tags">
-      <span class="tag">Swimming</span>
-      <span class="tag">Hiking</span>
-      <span class="tag">Outdoors</span>
-      <span class="tag">Curiosity</span>
-      <span class="tag">Mindfulness</span>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <a href="/">Back to home</a>
+    All photos are my own. · <a href="/">Back to home</a>
   </footer>
+
+  <dialog class="lightbox" aria-label="Photo viewer">
+    <figure>
+      <img src="" alt="" />
+      <figcaption></figcaption>
+    </figure>
+    <div class="lightbox-controls">
+      <button type="button" data-prev aria-label="Previous photo">← Prev</button>
+      <button type="button" data-close>Close</button>
+      <button type="button" data-next aria-label="Next photo">Next →</button>
+    </div>
+  </dialog>
+
+  <script src="/site.js"></script>
 </body>
 </html>
