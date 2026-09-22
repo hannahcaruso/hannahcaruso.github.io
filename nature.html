@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hannah — Nature &amp; Joy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --navy: #0a0f1c;
+      --red: #e4002b;
+      --white: #ffffff;
+      --gray: #d9d9d9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    .back {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      z-index: 1;
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .back:hover {
+      color: var(--red);
+    }
+
+    /* HERO */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80')
+        center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 3rem;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 15, 28, 0.55);
+    }
+
+    .hero-text {
+      position: relative;
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--gray);
+    }
+
+    /* SECTION */
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      color: var(--red);
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      color: var(--gray);
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+      padding-left: 1rem;
+      position: relative;
+      color: var(--white);
+    }
+
+    li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: var(--red);
+    }
+
+    /* IDEA CARDS */
+    .ideas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .idea {
+      border-left: 3px solid var(--red);
+      padding: 0.25rem 0 0.25rem 1rem;
+    }
+
+    .idea p {
+      margin-bottom: 0;
+    }
+
+    /* TAGS */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .tag {
+      background: var(--red);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--gray);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--white);
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 2rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+
+      section {
+        padding: 2.5rem 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero">
+    <a class="back" href="/">← Home</a>
+    <div class="hero-text">
+      <h1>Nature &amp; Joy</h1>
+      <p>Why the outdoors resets me — and what psychology says about the little things that make us happy.</p>
+    </div>
+  </div>
+
+  <section>
+    <h2>Why I Love Nature</h2>
+    <p>
+      Being outside is where I slow down. A walk under the trees, the sound of
+      water, the light changing at the end of the day — those moments quiet the
+      to‑do list in my head in a way nothing else does. I don't need a grand
+      adventure; even a short stretch of green between classes is enough to
+      make me feel like myself again.
+    </p>
+    <ul>
+      <li>Fresh air and a clear head after a long day of reading and writing.</li>
+      <li>Noticing small details — birds, leaves, the way the seasons shift.</li>
+      <li>Time that isn't scheduled, measured, or on a screen.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>The Psychology of Joy</h2>
+    <p>
+      I've always been curious about <em>why</em> certain things reliably make
+      us happy. It turns out researchers have spent a lot of time on that
+      question, and a few ideas really stuck with me.
+    </p>
+
+    <div class="ideas">
+      <div class="idea">
+        <h3>Biophilia</h3>
+        <p>
+          Biologist E.&nbsp;O. Wilson proposed that humans have an innate pull
+          toward living things and natural environments — a leftover from the
+          long stretch of history when our survival depended on reading the
+          landscape around us.
+        </p>
+      </div>
+
+      <div class="idea">
+        <h3>Attention Restoration</h3>
+        <p>
+          Psychologists Rachel and Stephen Kaplan argued that focused work
+          drains our "directed attention." Nature holds our attention gently —
+          what they called <em>soft fascination</em> — which lets that mental
+          muscle recover.
+        </p>
+      </div>
+
+      <div class="idea">
+        <h3>Stress Recovery</h3>
+        <p>
+          Roger Ulrich's research, including a well‑known study of hospital
+          patients with a window view of trees, suggests natural scenes can
+          lower stress and help people recover faster.
+        </p>
+      </div>
+
+      <div class="idea">
+        <h3>Awe</h3>
+        <p>
+          Psychologist Dacher Keltner studies awe — the feeling of being in the
+          presence of something vast. Awe tends to shrink our sense of self in
+          a good way, making worries feel smaller and connection feel bigger.
+        </p>
+      </div>
+
+      <div class="idea">
+        <h3>Savoring</h3>
+        <p>
+          Happiness research finds that simply paying attention to a good
+          moment — lingering on it instead of rushing past — makes the good
+          feeling stronger and longer‑lasting.
+        </p>
+      </div>
+
+      <div class="idea">
+        <h3>Small, Frequent Joys</h3>
+        <p>
+          We adapt quickly to big changes (the "hedonic treadmill"), but small,
+          repeated pleasures keep landing. That's why a daily walk can matter
+          more than a once‑a‑year trip.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What I Take From It</h2>
+    <p>
+      For me, the takeaway is that joy isn't random. The things that bring us
+      happiness often do so for real reasons — they restore our focus, lower
+      our stress, or connect us to something bigger than ourselves. Knowing
+      that makes me more intentional about building those moments into
+      ordinary weeks, not just saving them for vacations.
+    </p>
+
+    <div class="tags">
+      <span class="tag">Outdoors</span>
+      <span class="tag">Curiosity</span>
+      <span class="tag">Mindfulness</span>
+    </div>
+  </section>
+
+  <footer>
+    <a href="/">Back to home</a>
+  </footer>
+</body>
+</html>
